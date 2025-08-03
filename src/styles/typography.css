@@ -1,0 +1,112 @@
+p:not(.override):not(.🔒️) {
+  color: var(--foreground-2);
+}
+
+/* Headings */
+h1:not(.override):not(.🔒️),
+h2:not(.override):not(.🔒️),
+h3:not(.override):not(.🔒️),
+h4:not(.override):not(.🔒️),
+h5:not(.override):not(.🔒️),
+h6:not(.override):not(.🔒️) {
+  margin: .25rem 0;
+}
+
+h1:not(.override):not(.🔒️) {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2:not(.override):not(.🔒️) {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h3:not(.override):not(.🔒️) {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h4:not(.override):not(.🔒️) {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h5:not(.override):not(.🔒️) {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h6:not(.override):not(.🔒️) {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Hyperlinks */
+a:not(.override):not(.🔒️),
+.hyperlink {
+  display: inline;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+a:not(.override):not(.🔒️):hover,
+.hyperlink:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button:not(.override):not(.🔒️),
+input[type=submit]:not(.override):not(.🔒️),
+.button {
+  display: inline-block;
+  padding: .5rem 1.5rem;
+  background-color: var(--accent);
+  box-shadow: 0 .1em .2em var(--accent-2);
+  cursor: pointer;
+  transition: all .1s;
+}
+
+button:not(.override):not(.🔒️):not(:disabled):hover,
+input[type=submit]:not(.override):not(.🔒️):not(:disabled):hover,
+.button:not(:disabled):hover {
+  box-shadow: 0 -.1em .2em var(--accent-2);
+}
+
+button:not(.override):not(.🔒️):not(:disabled):active,
+input[type=submit]:not(.override):not(.🔒️):not(:disabled):active,
+.button:not(:disabled):active {
+  box-shadow: 0 .1em .2em var(--accent-2);
+}
+
+button:not(.override):not(.🔒️):disabled,
+input[type=submit]:not(.override):not(.🔒️):disabled,
+.button:disabled {
+  background-color: var(--accent-2);
+  cursor: default;
+}
+
+/* Inputs */
+input[type=text]:not(.override):not(.🔒️) {
+  padding: .5em;
+  background-color: var(--background-2);
+  /* border: 1px solid color-mix(in srgb, transparent 93%, white); */
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, transparent 93%, white);
+  width: 100%;
+  outline: none;
+  transition: all .3s ease;
+}
+
+input[type=text]:not(.override):not(.🔒️):focus {
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, transparent 97%, white);
+}
+
+/* Code blocks */
+code {
+  display: inline-block;
+  margin: 0 .5em;
+  padding: .25em .5em;
+  font-family: monospace;
+  font-size: .8rem;
+  background-color: var(--accent-2);
+}
